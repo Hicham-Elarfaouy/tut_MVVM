@@ -64,6 +64,8 @@ class OnBoardingViewModel extends BaseViewModel with OnBoardingViewModelInputs,O
 }
 
 
+
+
 abstract class OnBoardingViewModelInputs{
   int goForward();
   int goBack();
@@ -73,10 +75,11 @@ abstract class OnBoardingViewModelInputs{
   Sink get inputOnBoardingSliderView;
 }
 
-
 abstract class OnBoardingViewModelOutputs{
   Stream<OnBoardingSliderView> get outputOnBoardingSliderView;
 }
+
+
 
 class OnBoardingSliderView{
   OnBoardingSlider onBoardingSlider;
