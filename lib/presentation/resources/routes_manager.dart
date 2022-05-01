@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app8/presentation/forgot_password/forgot_password_view.dart';
 import 'package:flutter_app8/presentation/login/login_view.dart';
 import 'package:flutter_app8/presentation/main/main_view.dart';
-import 'package:flutter_app8/presentation/onboarding/onboarding_view.dart';
+import 'package:flutter_app8/presentation/onboarding/view/onboarding_view.dart';
 import 'package:flutter_app8/presentation/register/register_view.dart';
 import 'package:flutter_app8/presentation/resources/strings_manager.dart';
 import 'package:flutter_app8/presentation/splash/splash_view.dart';
@@ -19,7 +19,7 @@ class Routes {
 }
 
 class RouteGenerator {
-  static Route<dynamic> getRoute({required RouteSettings settings}) {
+  static Route<dynamic>? getRoute(RouteSettings settings) {
     switch (settings.name) {
       case Routes.splashRoute:
         return MaterialPageRoute(builder: (_) => const SplashView());
@@ -44,7 +44,7 @@ class RouteGenerator {
     return MaterialPageRoute(
       builder: (_) => const Scaffold(
         body: SafeArea(
-          child: Center(child: Text(StringsManager.noRouteFound)),
+          child: Center(child: Text(AppStrings.noRouteFound)),
         ),
       ),
     );

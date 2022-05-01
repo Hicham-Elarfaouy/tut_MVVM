@@ -59,11 +59,19 @@ ThemeData lightTheme() {
         fontSize: FontSize.s16,
         color: ColorManager.darkGrey,
       ),
-      subtitle1: mediumStyle(
+      headlineMedium: regularStyle(
+        fontSize: FontSize.s14,
+        color: ColorManager.darkGrey,
+      ),
+      labelMedium: regularStyle(
+        fontSize: FontSize.s16,
+        color: ColorManager.primary,
+      ),
+      titleMedium: mediumStyle(
         fontSize: FontSize.s14,
         color: ColorManager.lightGrey,
       ),
-      caption: regularStyle(
+      bodyLarge: regularStyle(
         fontSize: FontSize.s16,
         color: ColorManager.grey1,
       ),
